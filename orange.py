@@ -181,4 +181,4 @@ def catch_all(year,month,day):
 
 if __name__ == '__main__':
     #app.run(host="homebrew.usc.edu", debug=True)
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0',port=5004,debug=True)
