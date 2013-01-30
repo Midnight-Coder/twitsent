@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <link href="http://racer5.usc.edu/~orange/twitsent{{css}}" rel="stylesheet" type="text/css" />
+    <link href="orange.css" rel="stylesheet" type="text/css" />
   </head>
     
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -28,7 +28,6 @@ function drawChart() {
     );
     query.setQuery('select A,B,G order by G');
     query.send(handleQueryResponse);
-
 }
 
 function handleQueryResponse(response) {
@@ -237,17 +236,12 @@ function handleQueryResponse(response) {
       </div>
       
     <div id="dashboard_div">
-      <!--<div id="time_div" style="display:inline-block;width:45%;height:250px"></div>
-      <div id="chart_div" style="display:inline-block;width:35%;height:250px"></div>
-      <div id="slider_div" style="display:inline-block;width:5%"></div>
-      <div id="table_div"></div> -->
-
-      <div id="time_div"></div>
-      <div id="chart_div">
-	<div id="pie_div"></div>
-	<div id="slider_div"></div>
-      </div>
-      <div id="table_div"></div>
+		<span id="time_div"></span>
+		<div id="chart_div">
+			<span id="pie_div"></span>
+			<span id="slider_div"></span>
+		</div>
+		<span id="table_div"></span>
     </div>
     
     <div id="footer">
